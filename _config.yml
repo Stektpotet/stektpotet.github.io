@@ -1,6 +1,6 @@
 ---
-title: Halvor Bakken Smedås' Portfolio
-timezone: UTC
+title: Halvor Bakken Smedås
+timezone: Europe/Copenhagen
 collections:
   posts:
     title: Posts
@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: a selection of my finest creations
+description: A selection of my finest creations
 google_analytics: 
 theme: jekyll-theme-cayman
 gems:
