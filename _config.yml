@@ -1,0 +1,15 @@
+---
+title: Halvor Bakken Smedås
+timezone: Europe/Copenhagen
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: A selection of my finest creations
+google_analytics: 
+theme: jekyll-theme-cayman
+gems:
+- jekyll-mentions
