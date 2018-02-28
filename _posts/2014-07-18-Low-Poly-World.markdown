@@ -23,4 +23,4 @@ layout: default
 
 An editor extension for Unity, the 3D Game Engine, allowing fast conversion from built-in, soft shaded terrain types to flat-shaded meshes, divided into chunks for optimization.
 
-![BG1.png](/uploads/BG1.png)
+![BG_Large.png](/img/portfolio/LowPolyWorld/BG_Large.png)
