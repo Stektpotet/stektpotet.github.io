@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  includes:
+    title: includes
+    output: true
 description: A selection of my finest creations
 google_analytics: 
 theme: jekyll-theme-cayman
