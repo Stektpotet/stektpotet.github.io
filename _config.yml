@@ -1,6 +1,37 @@
 ---
 title: Halvor Bakken Smedås
-timezone: Europe/Copenhagen
+email: stektpotet@gmail.com
+timezone: Europe/Norway
+description: "Portfolio - A selection of my finest creations"
+keywords: "Game Development, Programming, Apps, Graphics"
+meta_author: Smedås Halvor
+contact: static
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: 18bc9c #80B3FF
+  primary-rgb: "24,288,156" #"128,179,255"
+  secondary: 2c3e50 #FD6E8A
+  secondary-dark: 233140 #A2122F
+
+# Footer settings
+footer:
+  copyright: Dr. Henry Jekyll
+  location: Location
+  social: Around the Web
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/stektpotet
+  - title: github
+    url: http://github.com/stektpotet
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
 collections:
   posts:
     title: Posts
@@ -11,6 +42,4 @@ collections:
   includes:
     title: includes
     output: true
-description: A selection of my finest creations
-google_analytics: 
-theme: jekyll-theme-cayman
+google_analytics:
