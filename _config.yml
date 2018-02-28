@@ -11,5 +11,3 @@ collections:
 description: A selection of my finest creations
 google_analytics: 
 theme: jekyll-theme-cayman
-gems:
-- jekyll-mentions
