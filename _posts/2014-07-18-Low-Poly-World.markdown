@@ -13,11 +13,10 @@ tags:
 modal-id: 1
 img: LowPolyWorld/BG_thumbnail.png
 alt: Low Poly World
-project-date: 2016-03-21 12:00:00 +01:00
-client: Start Bootstrap
 description: 'Low Poly World: An editor extension for Unity, the 3D Game Engine, allowing
   fast conversion from built-in, soft shaded terrain types to flat-shaded meshes,
   divided into chunks for optimization.'
+Asset Store: http://u3d.as/oir
 layout: default
 ---
 
