@@ -21,6 +21,6 @@ description: 'Low Poly World: An editor extension for Unity, the 3D Game Engine,
 layout: default
 ---
 
-Low Poly World: An editor extension for Unity, the 3D Game Engine, allowing fast conversion from built-in, soft shaded terrain types to flat-shaded meshes, divided into chunks for optimization.
+An editor extension for Unity, the 3D Game Engine, allowing fast conversion from built-in, soft shaded terrain types to flat-shaded meshes, divided into chunks for optimization.
 
 ![BG1.png](/uploads/BG1.png)
