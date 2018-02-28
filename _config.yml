@@ -8,6 +8,26 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: A selection of my finest creations
+email: stektpotet@gmail.com
+description: Portfolio - A selection of my finest creations
+keywords: Game Development, Programming, Apps, Graphics
+meta_author: Smedås Halvor
+contact: static
+color:
+  primary: 18bc9c
+  primary-rgb: '24,288,156'
+  secondary: 2c3e50
+  secondary-dark: 233140
+footer:
+  copyright: Dr. Henry Jekyll
+  location: Location
+  social: Around the Web
+  credits: Credits
+social:
+- title: twitter
+  url: http://twitter.com/stektpotet
+- title: github
+  url: http://github.com/stektpotet
+markdown: kramdown
+permalink: pretty
 google_analytics: 
-theme: jekyll-theme-cayman
