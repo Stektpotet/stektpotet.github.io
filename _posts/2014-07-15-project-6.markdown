@@ -1,11 +1,11 @@
 ---
-title: Project 2
-date: 2014-07-17 00:00:00 +02:00
+title: Project 6
+date: 2014-07-15 00:00:00 +02:00
 categories:
 - Web Development
 layout: default
-modal-id: 2
-img: cake.png
+modal-id: 6
+img: submarine.png
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
