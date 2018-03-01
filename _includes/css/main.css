@@ -77,7 +77,7 @@ hr.star-light:after {
     background-color: #{{ site.color.primary }};
 }
 
-hr.star-light:after #about {
+#about {
     background-color: #{{ site.color.tertiary }};
 }
 
@@ -196,7 +196,6 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #{{ site.color.primary }};
 }
 
 @media(max-width:767px) {
