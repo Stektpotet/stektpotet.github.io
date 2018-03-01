@@ -21,6 +21,7 @@ color:
   primary-rgb: '24,288,156'
   secondary: 2c3e50
   secondary-dark: 233140
+  tertiary: b9805b
 footer:
   copyright: Dr. Henry Jekyll
   location: Location
@@ -33,4 +34,4 @@ social:
   url: http://github.com/stektpotet
 markdown: kramdown
 permalink: pretty
-google_analytics: 
+google_analytics:

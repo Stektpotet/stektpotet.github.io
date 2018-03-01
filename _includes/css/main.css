@@ -77,6 +77,10 @@ hr.star-light:after {
     background-color: #{{ site.color.primary }};
 }
 
+hr.star-light:after #about {
+    background-color: #{{ site.color.tertiary }};
+}
+
 hr.star-primary {
     border-color: #{{ site.color.secondary }};
 }
