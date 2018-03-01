@@ -72,13 +72,16 @@ hr.star-light {
     border-color: #fff;
 }
 
+
+#about hr.star-light:after {
+    color: #fff;
+    background-color: #{{ site.color.tertiary }};
+}
+
+
 hr.star-light:after {
     color: #fff;
     background-color: #{{ site.color.primary }};
-}
-
-#about {
-    background-color: #{{ site.color.tertiary }};
 }
 
 hr.star-primary {
@@ -206,6 +209,10 @@ section.success {
     section.first {
         padding-top: 75px;
     }
+}
+
+#about section.success {
+    background-color: #{{ site.color.tertiary }};
 }
 
 #portfolio .portfolio-item {
