@@ -212,7 +212,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba({{ site.color.primary-rgb }},.9);
+    background: rgba({{ site.color.item-bg-rgb }},.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -400,6 +400,11 @@ footer .footer-below {
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
+}
+
+.portfolio-modal .modal-content h4 {
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .portfolio-modal .modal-content img {
