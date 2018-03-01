@@ -21,7 +21,6 @@ color:
   primary-rgb: '24,288,156'
   secondary: 2c3e50
   secondary-dark: 233140
-  item-bg-rgb: '200,200,200'
 footer:
   copyright: Dr. Henry Jekyll
   location: Location
