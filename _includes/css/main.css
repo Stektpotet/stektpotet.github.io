@@ -197,6 +197,7 @@ section h2 {
 
 section.success {
     color: #fff;
+    background-color: #{{ site.color.tertiary }};
 }
 
 @media(max-width:767px) {
@@ -207,10 +208,6 @@ section.success {
     section.first {
         padding-top: 75px;
     }
-}
-
-#about section.success {
-    background-color: #{{ site.color.tertiary }};
 }
 
 #portfolio .portfolio-item {
