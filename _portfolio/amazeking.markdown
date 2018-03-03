@@ -16,8 +16,8 @@ images:
 - path: Amazeking/thumbnail.gif
   alt: Early gameplay
   description: Early Gameplay
-- path: Amazeking/splashscreen.png
-  alt: Splash screen
+- path: https://i.imgur.com/9InYeLc.gif
+  alt: Work in progress
 - path: Amazeking/thumbnail.gif
   alt: Early gameplay
 - path: Amazeking/splashscreen.png
