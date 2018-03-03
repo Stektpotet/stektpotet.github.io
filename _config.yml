@@ -23,7 +23,7 @@ color:
   secondary-dark: 233140
   tertiary: b9805b
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: Halvor Bækken Smedås
   location: Location
   social: Around the Web
   credits: Credits
@@ -32,6 +32,8 @@ social:
   url: http://twitter.com/stektpotet
 - title: github
   url: http://github.com/stektpotet
+- title: LinkedIn
+  url: https://www.linkedin.com/in/halvorbs
 markdown: kramdown
 permalink: pretty
 google_analytics: 
