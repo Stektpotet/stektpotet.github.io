@@ -13,7 +13,7 @@ img: Amazeking/splashscreen.png
 alt: Amazeking!
 project-date: 2016-12-02 12:00:00 +01:00
 description: 
-layout: default
+layout: article
 ---
 
 # As part of IMT1361 - Experience Design, I present:
