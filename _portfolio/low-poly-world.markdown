@@ -14,10 +14,10 @@ modal-id: 1
 img: LowPolyWorld/BG_thumbnail.png
 alt: Low Poly World
 images:
-  - path: LowPolyWorld/BG_Large.png
-    alt: Low Poly World 01
-  - path: LowPolyWorld/BG_thumbnail.png
-    alt: Low Poly World 02
+- path: LowPolyWorld/BG_Large.png
+  alt: Low Poly World 01
+- path: LowPolyWorld/BG_thumbnail.png
+  alt: Low Poly World 02
 description: An editor extension for Unity, the 3D Game Engine, allowing fast conversion
   from the built-in, soft shaded terrain types to flat-shaded meshes that are divided
   into chunks for optimization.
