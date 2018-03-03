@@ -15,19 +15,12 @@ images:
   alt: Splash screen
 - path: Amazeking/thumbnail.gif
   alt: Early gameplay
-  description: Early Gameplay
-- path: https://i.imgur.com/9InYeLc.gif
+  description: Early Gameplay Mechanics
+- path: Amazeking/9InYeLc[1].gif
   alt: Work in progress
-- path: Amazeking/thumbnail.gif
-  alt: Early gameplay
-- path: Amazeking/splashscreen.png
-  alt: Splash screen
-- path: Amazeking/thumbnail.gif
-  alt: Early gameplay
-- path: Amazeking/splashscreen.png
-  alt: Splash screen
-- path: Amazeking/thumbnail.gif
-  alt: Early gameplay
+  description: Early Dialogue System
+- path: Amazeking/3e8bhPk[1].gif
+  alt: Stencil Cutout Shaders
 img: Amazeking/thumbnail.gif
 alt: Amazeking
 description: A 2D platformer game made for the subject IMT1362 - Experience Design
