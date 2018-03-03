@@ -1,6 +1,6 @@
  <!-- Portfolio Modals -->
- {% for post in site.posts %}
-    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+ {% for post in site.portfolio %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true" data-id="{{ post.modal-id }}">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -14,9 +14,33 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            {% if post.description %}
-                                <p>{{ post.description }}</p>
+                                <div class="slideshow-container">
+                                {% if post.images %}
+                                <div>
+                                    {% for image in post.images %}
+
+                                    <div class="mySlides" id="project-{{ post.modal-id }}">
+                                        <div class="numbertext">{{ forloop.index }} / {{ post.images | size }}</div>
+                                        <img src="img/portfolio/{{ image.path }}" class="mySlidesImg" alt="{{ image.alt }}">
+                                        {% if image.description %}
+                                        <div class="text">{{ image.description }}</div>
+                                        {% endif %}
+                                    </div>
+                                    {% endfor %}
+                                        <div class="prev" onclick="previous()">&#10094;</div>
+                                        <div class="next" onclick="next()">&#10095;</div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div style="text-align:center">
+                                {% for image in post.images %}
+                                    <span class="dot" id="project-{{ post.modal-id }}" onclick="setDiv({{ forloop.index0 }})"></span>
+                                {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% if post.content %}
+                                <p>{{ post.content }}</p>
                             {% endif %}
                             <ul class="list-inline item-details">
                                 {% if post.client %}

@@ -95,6 +95,14 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+.mySlides {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
 header {
     text-align: center;
     color: #fff;
@@ -420,10 +428,6 @@ footer .footer-below {
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
-}
-
-.portfolio-modal .modal-content img {
-    margin-bottom: 30px;
 }
 
 .portfolio-modal .modal-content .item-details {
