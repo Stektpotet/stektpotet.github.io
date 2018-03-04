@@ -221,8 +221,17 @@ section.tertiary {
 section.WIP {
     color: #{{ site.color.secondary }};
     background-color: #{{ site.color.WIP }};
-    border: 1.25em #fff;
-    border-style: dashed none dashed none;
+    border: 1.5em #fff;
+    border-style: dotted dashed;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right:1em;
+    border-left-width: 0.5em;
+    border-right-width: 0.5em;
+    box-shadow:  1em  0     0    0      #{{ site.color.WIP }}, /* LEFT */
+                -1em  0     0    0      #{{ site.color.WIP }}, /* RIGHT */
+                 0    2em   0   -0.45em #{{ site.color.WIP }} , /* BOTTOM */
+                 0   -2em   0   -0.45em #{{ site.color.WIP }} ; /* TOP */
 }
 
 #WIP:after {

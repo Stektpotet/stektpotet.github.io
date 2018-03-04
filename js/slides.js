@@ -28,12 +28,10 @@ function showDivs(n) {
     dots[slideIndex].className += " active";
 }
 
-// $(document).ready(function() {
-    $('.portfolio-modal').on('show.bs.modal', function () {
-        currentModal = $(this).data('id');
-        setDiv(0);
-    });
-// });
+$('.portfolio-modal').on('show.bs.modal', function () {
+    currentModal = $(this).data('id');
+    setDiv(0);
+});
 
 
 /*
