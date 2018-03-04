@@ -1,6 +1,6 @@
 ---
 title: Amazeking
-date: 2016-12-02 12:00:00 +00:00
+date: 2016-12-02 13:00:00 +01:00
 categories:
 - Game Development
 - Programming
