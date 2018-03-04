@@ -77,7 +77,7 @@ hr.star-light:after {
     background-color: #{{ site.color.primary }};
 }
 
-#about hr.star-light:after {
+#about:after {
     color: #fff;
     background-color: #{{ site.color.tertiary }};
 }
@@ -203,9 +203,29 @@ section h2 {
     font-size: 3em;
 }
 
-section.success {
+section.primary {
+    color: #fff;
+    background-color: #{{ site.color.primary }};
+}
+
+section.secondary {
+    color: #fff;
+    background-color: #{{ site.color.secondary }};
+}
+
+section.tertiary {
     color: #fff;
     background-color: #{{ site.color.tertiary }};
+}
+
+section.WIP {
+    color: #{{ site.color.secondary }};
+    background-color: #{{ site.color.WIP }};
+    border: 1.25em #fff;
+    border-style: dashed none dashed none;
+}
+#WIP:after {
+    background-color: #{{ site.color.WIP }};
 }
 
 @media(max-width:767px) {

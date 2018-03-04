@@ -1,6 +1,6 @@
 ---
 title: Amazeking
-date: 2014-07-17 00:00:00 +02:00
+date: 2016-12-02 13:00:00 +01:00
 categories:
 - Game Development
 - Programming
@@ -18,7 +18,7 @@ layout: article
 
 # As part of IMT1361 - Experience Design, I present:
 
-![Amazeking!](http://i.imgur.com/3tsezwD.png)
+![Amazeking!]({{ post.img }})
 
 [Gameplay Video](https://www.youtube.com/watch?v=KoEsu2TFOV4)
 
