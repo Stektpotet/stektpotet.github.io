@@ -224,6 +224,7 @@ section.WIP {
     border: 1.25em #fff;
     border-style: dashed none dashed none;
 }
+
 #WIP:after {
     background-color: #{{ site.color.WIP }};
 }
@@ -238,7 +239,7 @@ section.WIP {
     }
 }
 
-#about {
+#about:after {
     background-color: #{{ site.color.tertiary }};
 }
 
