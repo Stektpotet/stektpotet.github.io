@@ -22,6 +22,7 @@ color:
   secondary: 2c3e50
   secondary-dark: 233140
   tertiary: b9805b
+  WIP: cc462e
 footer:
   copyright: Halvor Bakken Smedås
   location: Location
@@ -36,4 +37,4 @@ social:
   url: http://www.linkedin.com/in/halvorbs
 markdown: kramdown
 permalink: pretty
-google_analytics: 
+google_analytics:

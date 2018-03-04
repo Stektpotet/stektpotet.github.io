@@ -13,17 +13,24 @@ modal-id: 2
 images:
 - path: Amazeking/splashscreen.png
   alt: Splash screen
+- path: Amazeking/unlit_no_shaders.png
+  alt: First Built Scene
+  description: Stencil Cutout Shaders
+- path: Amazeking/shaders.gif
+  alt: Custom Shaders
+  description: Stencil Cutout Shaders
+- path: Amazeking/light_test.gif
+  alt: Light Tests
+  description: Early Lighting Tests
+- path: Amazeking/old_man.gif
+  alt: Dialogue System
+  description: Early Dialogue System
 - path: Amazeking/thumbnail.gif
   alt: Early gameplay
   description: Early Gameplay Mechanics
-- path: Amazeking/9InYeLc[1].gif
-  alt: Work in progress
-  description: Early Dialogue System
-- path: Amazeking/3e8bhPk[1].gif
-  alt: Stencil Cutout Shaders
 img: Amazeking/thumbnail.gif
 alt: Amazeking
 description: A 2D platformer game made for the subject IMT1362 - Experience Design
 ---
 
-Content ples
+Amazeking is a 2D-platformer puzzle game made as part of an assignment for the NTNU course _IMT1362 - Experience Design_. 
