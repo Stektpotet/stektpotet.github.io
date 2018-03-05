@@ -95,6 +95,18 @@
   background-color: #717171;
 }
 
+#primary:after {
+    background-color: #{{ site.color.primary }};
+}
+
+#secondary:after {
+    background-color: #{{ site.color.secondary }};
+}
+
+#tertiary:after {
+    background-color: #{{ site.color.tertiary }};
+}
+
 /* Fading animation */
 /*
 .fade {

@@ -11,11 +11,13 @@ tags:
 - Game Development
 - Tools & Extensions
 modal-id: 1
-img: LowPolyWorld/BG_thumbnail.png
-alt: Low Poly World
+thumbnail:
+  img: LowPolyWorld/BG_thumbnail.png
+  alt: Low Poly World
 images:
 - path: LowPolyWorld/BG_Large.png
   alt: Low Poly World 01
+  description: A sample scene built in a few hours
 - path: LowPolyWorld/BG_thumbnail.png
   alt: Low Poly World 02
 description: An editor extension for Unity, the 3D Game Engine, allowing fast conversion
