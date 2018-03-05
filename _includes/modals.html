@@ -1,12 +1,13 @@
  <!-- Portfolio Modals -->
  {% for post in site.portfolio %}
     <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true" data-id="{{ post.modal-id }}">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+        <div class="modal-content col-lg-8 col-lg-offset-2">
+            <div class="close-modal"  data-dismiss="modal">
+                <i  class="fa fa-close"
+                    style=" top: -34px;
+                            left: 1px;
+                            position: relative;">
+                </i>
             </div>
             <div class="container">
                 <div class="row">
@@ -18,7 +19,6 @@
                                 {% if post.images %}
                                 <div>
                                     {% for image in post.images %}
-
                                     <div class="mySlides" id="project-{{ post.modal-id }}">
                                         <div class="numbertext">{{ forloop.index }} / {{ post.images | size }}</div>
                                         <img src="img/portfolio/{{ image.path }}" class="mySlidesImg" alt="{{ image.alt }}">
@@ -27,8 +27,12 @@
                                         {% endif %}
                                     </div>
                                     {% endfor %}
-                                        <div class="prev" onclick="previous()">&#10094;</div>
-                                        <div class="next" onclick="next()">&#10095;</div>
+                                        <div class="prev" onclick="previous()">
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <div class="next" onclick="next()">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <br>

@@ -32,24 +32,3 @@ $('.portfolio-modal').on('show.bs.modal', function () {
     currentModal = $(this).data('id');
     setDiv(0);
 });
-
-
-/*
-
-function showDivs(modalId, n) {
-  var i;
-  var x = document.querySelectorAll(".mySlides#project-" + modalId);
-  var dots = document.getElementsByClassName("demo");
-  console.log(x);
-  if (n > x.length) {slideIndex = 0}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex].style.display = "block";
-  dots[slideIndex].className += " w3-white";
-}
-*/
