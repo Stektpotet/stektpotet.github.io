@@ -35,6 +35,10 @@ social:
   url: http://github.com/stektpotet
 - title: linkedin
   url: http://www.linkedin.com/in/halvorbs
+- title: instagram
+  url: http://www.instagram.com/chordatagames
+- title: twitch
+  url: http://www.twitch.tv/stektpotet
 markdown: kramdown
 permalink: pretty
 google_analytics: 

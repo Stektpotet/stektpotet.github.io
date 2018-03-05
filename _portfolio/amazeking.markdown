@@ -10,6 +10,9 @@ tags:
 - Programming
 - Game Development
 modal-id: 2
+thumbnail:
+  img: Amazeking/thumbnail.gif
+  alt: Amazeking
 images:
 - path: Amazeking/splashscreen.png
   alt: Splash screen
@@ -28,9 +31,12 @@ images:
 - path: Amazeking/thumbnail.gif
   alt: Early gameplay
   description: Early Gameplay Mechanics
-img: Amazeking/thumbnail.gif
-alt: Amazeking
+links:
+- label: Github Repository
+  url: https://github.com/Stektpotet/Amazeking
+- label: Github
+  url: https://github.com/Stektpotet
 description: A 2D platformer game made for the subject IMT1362 - Experience Design
 ---
 
-Amazeking is a 2D-platformer puzzle game made as part of an assignment for the NTNU course _IMT1362 - Experience Design_. 
+Amazeking is a 2D-platformer puzzle game made as part of an assignment for the NTNU course _IMT1362 - Experience Design_.

@@ -1,24 +1,24 @@
  <!-- Portfolio Modals -->
  {% for post in site.portfolio %}
     <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true" data-id="{{ post.modal-id }}">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+        <div class="modal-content col-lg-8 col-lg-offset-2">
+            <div class="close-modal"  data-dismiss="modal">
+                <i  class="fa fa-close"
+                    style=" top: -34px;
+                            left: 1px;
+                            position: relative;">
+                </i>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
-                            <hr class="star-primary">
+                            <hr class="star-primary" id="tertiary">
                                 <div class="slideshow-container">
                                 {% if post.images %}
                                 <div>
                                     {% for image in post.images %}
-
                                     <div class="mySlides" id="project-{{ post.modal-id }}">
                                         <div class="numbertext">{{ forloop.index }} / {{ post.images | size }}</div>
                                         <img src="img/portfolio/{{ image.path }}" class="mySlidesImg" alt="{{ image.alt }}">
@@ -27,8 +27,12 @@
                                         {% endif %}
                                     </div>
                                     {% endfor %}
-                                        <div class="prev" onclick="previous()">&#10094;</div>
-                                        <div class="next" onclick="next()">&#10095;</div>
+                                        <div class="prev" onclick="previous()">
+                                            <i class="fa fa-chevron-left"></i>
+                                        </div>
+                                        <div class="next" onclick="next()">
+                                            <i class="fa fa-chevron-right"></i>
+                                        </div>
                                     </div>
                                 </div>
                                 <br>
@@ -42,7 +46,21 @@
                             {% if post.content %}
                                 <p>{{ post.content }}</p>
                             {% endif %}
+                            {% if post.links %}
                             <ul class="list-inline item-details">
+                                {% for link in post.links %}
+                                <li>{{ link.label }}
+                                    <a class="text-dark" href="{{ link.url }}">
+                                        {% if link.text %}
+                                            {{ link.text }}
+                                        {% else %}
+                                            {{ link.url }}
+                                        {% endif %}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
                                 {% if post.client %}
                                     <li>Client:
                                         <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
@@ -61,7 +79,6 @@
                                         </strong>
                                     </li>
                                 {% endif %}
-                            </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>
