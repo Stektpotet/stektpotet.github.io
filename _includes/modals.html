@@ -49,8 +49,8 @@
                             {% if post.links %}
                             <ul class="list-inline item-details">
                                 {% for link in post.links %}
-                                <li>link.label
-                                    <a href="{{ link.url }}">
+                                <li>{{ link.label }}
+                                    <a class="text-dark" href="{{ link.url }}">
                                         {% if link.text %}
                                             {{ link.text }}
                                         {% else %}

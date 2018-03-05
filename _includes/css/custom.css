@@ -40,11 +40,6 @@
   border-radius: 0 3px 3px 0;
 }
 
-.fa .prev, .fa .next {
-    display: block;
-    font-size: 18px;
-}
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
@@ -93,6 +88,16 @@
 
 .active, .dot:hover {
   background-color: #717171;
+}
+
+.text-light,
+.text-dark:hover {
+    color: #fff;
+}
+
+.text-dark,
+.text-light:hover {
+    color: #{{ site.color.secondary-dark }};
 }
 
 #primary:after {

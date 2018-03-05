@@ -31,6 +31,11 @@ images:
 - path: Amazeking/thumbnail.gif
   alt: Early gameplay
   description: Early Gameplay Mechanics
+links:
+- label: Github Repository
+  url: https://github.com/Stektpotet/Amazeking
+- label: Github
+  url: https://github.com/Stektpotet
 description: A 2D platformer game made for the subject IMT1362 - Experience Design
 ---
 
