@@ -261,8 +261,9 @@ section.WIP {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
-    height: 360px;
+    overflow: inherit;
+    height: 0;
+    padding-top: 100%;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -270,7 +271,9 @@ section.WIP {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba({{ site.color.primary-rgb }},.9);
+    bottom: 0;
+    z-index: 3;
+    background: rgba({{ site.color.primary-rgb }},.5);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
