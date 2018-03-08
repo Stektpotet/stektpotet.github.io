@@ -23,6 +23,9 @@
 .mySlidesImg {
     width: 100%;
     height: 100%;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
 }
 
 /* Next & previous buttons */
@@ -110,6 +113,22 @@
 
 #tertiary:after {
     background-color: #{{ site.color.tertiary }};
+}
+
+a.portfolio-link img.img-responsive {
+    position: absolute;
+    top: 0;
+}
+
+a.portfolio-link div.col-lg-12.text-center {
+    position: absolute;
+    bottom: 0;
+    text-decoration: underline;
+}
+
+.portfolio-link {
+    background-color: #ccc;
+    border: double 3px #999;
 }
 
 /* Fading animation */
