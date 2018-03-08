@@ -18,8 +18,14 @@ images:
 - path: LowPolyWorld/BG_Large.png
   alt: Low Poly World 01
   description: A sample scene built in a few hours
-- path: LowPolyWorld/BG_thumbnail.png
+- path: LowPolyWorld/BG2_Large.png
   alt: Low Poly World 02
+- path: LowPolyWorld/lowpolyworld_before.png
+  alt: Low Poly World - before
+- path: LowPolyWorld/lowpolyworld_after.png
+  alt: Low Poly World - after
+- path: LowPolyWorld/LPW_AssetStore_Big.png
+  alt: Asset Store Promo
 description: An editor extension for Unity, the 3D Game Engine, allowing fast conversion
   from the built-in, soft shaded terrain types to flat-shaded meshes that are divided
   into chunks for optimization.
