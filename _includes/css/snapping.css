@@ -1,0 +1,53 @@
+.snap-bottom,
+.snap-height-100 {
+    position: absolute;
+    top: 100%;
+}
+.snap-height-90 {
+    position: absolute;
+    top: 90%;
+}
+.snap-height-80 {
+    position: absolute;
+    top: 80%;
+}
+.snap-height-70 {
+    position: absolute;
+    top: 70%;
+}
+.snap-height-60 {
+    position: absolute;
+    top: 60%;
+}
+
+.snap-height-center,
+.snap-height-50 {
+    position: absolute;
+    top: 50%;
+}
+.snap-height-40 {
+    position: absolute;
+    top: 40%;
+}
+.snap-height-30 {
+    position: absolute;
+    top: 30%;
+}
+.snap-height-20 {
+    position: absolute;
+    top: 20%;
+}
+.snap-height-10 {
+    position: absolute;
+    top: 10%;
+}
+.snap-top,
+.snap-height-0 {
+    position: absolute;
+    top: 0%;
+}
+
+.snap-center-width {
+    position: absolute;
+    left: 50%;
+}
