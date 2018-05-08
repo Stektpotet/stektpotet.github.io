@@ -1,6 +1,6 @@
 ---
 title: OpenGL ModelViewer
-date: 2018-05-05 12:47:00 +01:00
+date: 2018-05-05 13:47:00 +02:00
 categories:
 - Game Development
 - Programming
@@ -26,7 +26,8 @@ links:
   url: https://github.com/Stektpotet/IMT2531-Assignment-2
 - label: Github
   url: https://github.com/Stektpotet
-description: A comprehensive model viewer/shader playground/scene builder made as part of the NTNU course IMT2531
+description: A comprehensive model viewer/shader playground/scene builder made as
+  part of the NTNU course IMT2531
 ---
 
 #### OpenGL Model Viewer
