@@ -1,6 +1,6 @@
 ---
 title: Forknife Spatula Royale
-date: 2018-05-05 12:47:00 +01:00
+date: 2018-05-05 13:47:00 +02:00
 categories:
 - Apps
 - Programming
@@ -14,10 +14,12 @@ thumbnail:
 images:
 - extpath: http://i.imgur.com/R32hyGa.gif
   alt: Gif showing recipe details
-  description: Flow of using the recipe list and how each recipe's ingredients can be added to shopping list, and how the user can add ingredients he ran out of when making the dish.
+  description: Flow of using the recipe list and how each recipe's ingredients can
+    be added to shopping list, and how the user can add ingredients he ran out of
+    when making the dish.
 - extpath: https://i.imgur.com/yPB4Zud.gif
   alt: Gif showing sorting
-  description: "Sorting: Alphabetical, PiF (Percentage in Fridge), TtM (Time to Make)"
+  description: 'Sorting: Alphabetical, PiF (Percentage in Fridge), TtM (Time to Make)'
 - extpath: https://i.imgur.com/a6gpaju.gif
   alt: Gif showing category filters
   description: demo of category filters
@@ -29,7 +31,9 @@ links:
   url: https://github.com/Stektpotet/Forknife-Spatula-Royale
 - label: Github
   url: https://github.com/Stektpotet
-description: An app to keep track of ingredients in your fridge as use ingredients or acquire new ones. Designed to find a best fit for dishes the user can make, also making it less likely that users waste food. NTNU course IMT3673
+description: An app to keep track of ingredients in your fridge as use ingredients
+  or acquire new ones. Designed to find a best fit for dishes the user can make, also
+  making it less likely that users waste food. NTNU course IMT3673
 ---
 
 #### Forknife Spatula Royale
