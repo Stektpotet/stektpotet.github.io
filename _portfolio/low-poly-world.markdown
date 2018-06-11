@@ -12,7 +12,7 @@ tags:
 - Tools & Extensions
 modal-id: 1
 thumbnail:
-  img: LowPolyWorld/BG_thumbnail.png
+  path: LowPolyWorld/BG_thumbnail.png
   alt: Low Poly World
 images:
 - path: LowPolyWorld/BG_Large.png

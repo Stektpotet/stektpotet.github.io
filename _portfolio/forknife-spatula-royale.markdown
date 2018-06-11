@@ -9,19 +9,19 @@ tags:
 - Mobile Apps
 modal-id: 4
 thumbnail:
-  img: ForknifeSpatulaRoyale/thumbnail.jpg
+  path: ForknifeSpatulaRoyale/thumbnail.jpg
   alt: Forknife Spatula Royale
 images:
-- path: ForknifeSpatulaRoyale/recipe_details.gif
+- extpath: http://i.imgur.com/R32hyGa.gif
   alt: Gif showing recipe details
   description: Flow of using the recipe list and how each recipe's ingredients can be added to shopping list, and how the user can add ingredients he ran out of when making the dish.
-- path: ForknifeSpatulaRoyale/sorting.gif
+- extpath: https://i.imgur.com/yPB4Zud.gif
   alt: Gif showing sorting
   description: "Sorting: Alphabetical, PiF (Percentage in Fridge), TtM (Time to Make)"
-- path: ForknifeSpatulaRoyale/category_filters.gif
+- extpath: https://i.imgur.com/a6gpaju.gif
   alt: Gif showing category filters
   description: demo of category filters
-- path: ForknifeSpatulaRoyale/shopping_list.gif
+- extpath: https://i.imgur.com/pA024xS.gif
   alt: Gif showing the shopping list
   description: demo of how the users would interact with the shopping list.
 links:

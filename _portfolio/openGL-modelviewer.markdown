@@ -9,7 +9,7 @@ tags:
 - Game Development
 modal-id: 3
 thumbnail:
-  img: OpenGL/Dragon.gif
+  path: OpenGL/Dragon.gif
   alt: Sample Scene rendering the Stanford Dragon
 images:
 - path: OpenGL/Dragon.gif
