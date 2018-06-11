@@ -19,12 +19,16 @@
                                 {% if post.images %}
                                 <div>
                                     {% for image in post.images %}
-                                    <div class="mySlides" id="project-{{ post.modal-id }}">
-                                        <div class="numbertext">{{ forloop.index }} / {{ post.images | size }}</div>
-                                        <img src="img/portfolio/{{ image.path }}" class="mySlidesImg" alt="{{ image.alt }}">
-                                        {% if image.description %}
-                                        <div class="text">{{ image.description }}</div>
-                                        {% endif %}
+                                      <div class="mySlides" id="project-{{ post.modal-id }}">
+                                          <div class="numbertext">{{ forloop.index }} / {{ post.images | size }}</div>
+                                          {% if image.extpath %}
+                                            <img src="{{ image.extpath }}" class="mySlidesImg" alt="{{ image.alt }}">
+                                          {% else %}
+                                            <img src="img/portfolio/{{ image.path }}" class="mySlidesImg" alt="{{ image.alt }}">
+                                          {% endif %}
+                                          {% if image.description %}
+                                            <div class="text">{{ image.description }}</div>
+                                          {% endif %}
                                     </div>
                                     {% endfor %}
                                         <div class="prev" onclick="previous()">

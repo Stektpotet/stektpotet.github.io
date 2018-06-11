@@ -11,7 +11,7 @@ tags:
 - Game Development
 modal-id: 2
 thumbnail:
-  img: Amazeking/thumbnail.gif
+  path: Amazeking/thumbnail.gif
   alt: Amazeking
 images:
 - path: Amazeking/splashscreen.png

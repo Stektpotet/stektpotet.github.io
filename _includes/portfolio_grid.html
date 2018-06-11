@@ -17,7 +17,11 @@
                                     <i class="fa fa-search-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img src="img/portfolio/{{ post.thumbnail.img }}" class="img-responsive" alt="{{ post.thumbnail.alt }}">
+                            {% if post.thumbnail.extpath %}
+                              <img src="{{ post.thumbnail.extpath }}" class="img-responsive" alt="{{ post.thumbnail.alt }}">
+                            {% else %}
+                              <img src="img/portfolio/{{ post.thumbnail.path }}" class="img-responsive" alt="{{ post.thumbnail.alt }}">
+                            {% endif %}
                             <div class="col-lg-12 text-center">
                                 <h3>{{ post.title }}</h3>
                             </div>
