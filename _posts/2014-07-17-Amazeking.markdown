@@ -1,5 +1,7 @@
 ---
 title: Amazeking
+header:
+  subtitle: As part of IMT1361 "Experience Design"
 date: 2014-07-17 00:00:00 +02:00
 categories:
 - Game Development
@@ -9,17 +11,15 @@ tags:
 - C#
 - Programming
 - Game Development
-img: Amazeking/splashscreen.png
-alt: Amazeking!
+preview:
+  img: /img/portfolio/Amazeking/splashscreen.png
+  alt: Amazeking!
+  img-background: '#181c18'
 project-date: 2016-12-02 12:00:00 +01:00
-description: 
-layout: default
+description: 'Amazeking was a small game prototype developed by me and fellow classmates as part of the "Experience Design"-course held at NTNU (IMT1361). My role in development was lead programmer, and level creator, '
+layout: blog
 ---
-
-As part of IMT1361 - Experience Design...
-
-![image alt text](http://i.imgur.com/3tsezwD.png)
-
+<p class="small">{{ page.description }}</p>
 [Gameplay Video](https://www.youtube.com/watch?v=KoEsu2TFOV4)
 
 [Executable & Source Code](https://github.com/Stektpotet/Amazeking/releases/tag/1.0)
@@ -28,7 +28,7 @@ Contents
 
 ---
 
-### [Assignment 3](#assignment-3-1)
+### [Assignment 3](#assignment-3-1){: class="text-capitalize"}
 
 #### 1. [Concept Document](#1-concept-document-1)
 

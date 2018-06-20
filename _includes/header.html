@@ -3,11 +3,30 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    {% if page.header.img %}
                     <img class="img-responsive" src="img/profile.png" alt="">
+                    {% endif %}
                     <div class="intro-text">
-                        <span class="name">{{ site.title }}</span>
-                        <hr class="star-light">
-                        <span class="skills">{{ site.skills }}</span>
+                        {% if page.header.title %}
+                        <span class="name">{{ page.header.title }}</span>
+                        {% else %}
+                        <span class="name">{{ page.title }}</span>
+                        {% endif %}
+                        {% if page.header.subtitle %}
+                            <hr class="star-light">
+                            <span class="name" id="quote">{{ page.header.subtitle }}</span>
+                            {% if page.header.subtitle contains '!RUN_QUOTE_SCRIPT!'%}
+                                <script type="text/javascript">
+                                var quote_list = ["nullptr"];
+                                {% for quote in page.quotes %}
+                                quote_list.push("{{ quote }}");
+                                {% endfor %}
+                                var random_quote = quote_list[Math.floor(Math.random() * quote_list.length)];
+                                document.getElementById("quote").innerHTML = random_quote;
+                                </script>
+                            {% endif %}
+                        {% endif %}
+
                     </div>
                 </div>
             </div>

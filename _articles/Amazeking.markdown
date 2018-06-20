@@ -12,7 +12,7 @@ tags:
 img: Amazeking/splashscreen.png
 alt: Amazeking!
 project-date: 2016-12-02 12:00:00 +01:00
-description: 
+description: Nada
 layout: article
 ---
 

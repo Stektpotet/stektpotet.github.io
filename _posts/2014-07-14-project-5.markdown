@@ -1,9 +1,9 @@
 ---
+layout: blog
 title: Project 5
 date: 2014-07-14 00:00:00 +02:00
 categories:
 - Web Development
-layout: default
 modal-id: 5
 img: safe.png
 alt: image-alt
@@ -14,4 +14,3 @@ description: Use this area of the page to describe your project. The icon above 
   On their website, you can download their free set with 16 icons, or you can purchase
   the entire set with 146 icons for only $12!
 ---
-

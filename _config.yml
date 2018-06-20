@@ -1,4 +1,5 @@
 ---
+url: https://stektpotet.github.io/
 title: Halvor Bakken Smedås
 timezone: Europe/Copenhagen
 collections:
@@ -16,6 +17,7 @@ description: Portfolio - A selection of my finest creations
 keywords: Game Development, Programming, Apps, Graphics
 meta_author: Smedås Halvor
 contact: static
+
 color:
   primary: 18bc9c
   primary-rgb: '24,288,156'
@@ -23,11 +25,13 @@ color:
   secondary-dark: 233140
   tertiary: b9805b
   WIP: cc462e
+
 footer:
   copyright: Halvor Bakken Smedås
   location: Location
   social: Around the Web
   credits: Credits
+
 social:
 - title: twitter
   url: http://twitter.com/stektpotet
@@ -39,6 +43,13 @@ social:
   url: http://www.instagram.com/chordatagames
 - title: twitch
   url: http://www.twitch.tv/stektpotet
+
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 permalink: pretty
-google_analytics: 
+
+plugins:
+  - jekyll-feed

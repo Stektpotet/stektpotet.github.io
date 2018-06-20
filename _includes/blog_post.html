@@ -1,0 +1,31 @@
+<!-- Blog Post Section -->
+<div>
+{% if page.preview %}
+    {%
+        assign bg = page.preview.img-background |
+        replace: '!COLOR_PRIMARY!', site.color.primary |
+        replace: '!COLOR_SECONDARY!', site.color.secondary |
+        replace: '!COLOR_SECONDARY_DARK!', site.color.secondary |
+        replace: '!COLOR_TERTIARY!', site.color.tertiary |
+        replace: '!COLOR_WIP!', site.color.WIP
+    %}
+
+    {% if bg contains '#' %}
+    <div style="background-color: {{ bg }} ">
+    {% else %}
+    <div style="background-image: {{ bg | prepend: 'url(' | append: ')' }}">
+    {% endif %}
+        <div class="container">
+            <div class="row">
+                <img src="{{ page.preview.img }}" alt="{{ page.preview.alt }}" class="img-responsive .col-md-6 .col-md-offset-3" />
+            </div>
+        </div>
+    </div>
+{% endif %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            {{ page.content }}
+        </div>
+    </div>
+</div>

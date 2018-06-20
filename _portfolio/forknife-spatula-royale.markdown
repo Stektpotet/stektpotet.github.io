@@ -34,14 +34,18 @@ links:
 description: An app to keep track of ingredients in your fridge as use ingredients
   or acquire new ones. Designed to find a best fit for dishes the user can make, also
   making it less likely that users waste food. NTNU course IMT3673
+layout: article
 ---
 
-#### Forknife Spatula Royale
-is an app to keep track of ingredients in your fridge as you go by your daily routine of food making and -consuming. The app keeps track of your current inventory in the fridge as a user acquire new ingredients or uses any ingredients in the fridge for dishes. 
+_Forknife Spatula Royale_ is an app to keep track of ingredients in your fridge as you go by your daily routine of food making and -consuming. The app keeps track of your current inventory in the fridge as a user acquire new ingredients or uses any ingredients in the fridge for dishes.
 
 The app is designed to help users find a best fit for different dishes they can make based on the name of the dish, how long it takes to make, and perhaps most importantly: how many of the needed ingreedients are already in the user's fridge. The end result being ease of planning and making dishes, in addition to the fact that it's less likely that users waste food as the chance of actually using 'in-fridge-ingredients' is more likely. The app was made as the final project in the NTNU course IMT3673
 
-##### Features
+--------------------------------------------------------------------
+
+### Features
+
+--------------------------------------------------------------------
 
 You can:
 

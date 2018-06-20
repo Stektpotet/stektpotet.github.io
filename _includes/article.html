@@ -1,0 +1,62 @@
+<!-- Article Section -->
+<header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="intro-text">
+                <span class="name">{{ page.title }}</span>
+                <hr class="star-light">
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+                <div class="modal-body">
+<div class="slideshow-container">
+{% if page.images %}
+<div style="height: 500px">
+    {% for image in page.images %}
+      <div class="mySlides" id="project-{{ page.modal-id }}">
+          <div class="numbertext">{{ forloop.index }} / {{ page.images | size }}</div>
+          {% if image.extpath %}
+            <img src="{{ image.extpath }}" class="mySlidesImg" alt="{{ image.alt }}">
+          {% else %}
+            <img src="img/portfolio/{{ image.path }}" class="mySlidesImg" alt="{{ image.alt }}">
+          {% endif %}
+          {% if image.description %}
+            <div class="text">{{ image.description }}</div>
+          {% endif %}
+    </div>
+    {% endfor %}
+        <div class="prev" onclick="previous()">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+        <div class="next" onclick="next()">
+            <i class="fa fa-chevron-right"></i>
+        </div>
+    </div>
+</div>
+<br>
+<div style="text-align:center">
+{% for image in page.images %}
+    <span class="dot" id="project-{{ page.modal-id }}" onclick="setDiv({{ forloop.index0 }})"></span>
+{% endfor %}
+</div>
+{% endif %}
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <p>{{ page.content }}</p>
+        </div>
+    </div>
+</div>

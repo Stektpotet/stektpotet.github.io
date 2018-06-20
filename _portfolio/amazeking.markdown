@@ -37,6 +37,7 @@ links:
 - label: Github
   url: https://github.com/Stektpotet
 description: A 2D platformer game made for the subject IMT1362 - Experience Design
+
 ---
 
 Amazeking is a 2D-platformer puzzle game made as part of an assignment for the NTNU course _IMT1362 - Experience Design_.

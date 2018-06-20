@@ -32,6 +32,8 @@ images:
 description: An editor extension for Unity, the 3D Game Engine, allowing fast conversion
   from the built-in, soft shaded terrain types to flat-shaded meshes that are divided
   into chunks for optimization.
+
+layout: article
 ---
 
 #### Low Poly World

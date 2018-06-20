@@ -28,6 +28,7 @@ links:
   url: https://github.com/Stektpotet
 description: A comprehensive model viewer/shader playground/scene builder made as
   part of the NTNU course IMT2531
+layout: article
 ---
 
 #### OpenGL Model Viewer
@@ -51,7 +52,7 @@ Core features:
 
 * Lights, accessible through a uniform buffer object
 
-* Asset Reloading 
+* Asset Reloading
 
   | Key   | Action                                   |
   | ----- | ---------------------------------------- |
