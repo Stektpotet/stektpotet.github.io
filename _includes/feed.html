@@ -1,10 +1,27 @@
+<!-- Feed Section -->
+<section class="tertiary" id="about">
+    <div class="container">
+            <div class="text-center">
+                <b style="font-size: 40px;">NOTE</b>
+<p class="article-note" style="font-size: 22px;">All content on this site is based on <b>my</b> understanding of topics!
+
+    By no means should you take my word as fact, but rather as a view on a topic I know <b>something</b> about.
+    With that said, if you do find errors, have questions or inquiries otherwise - please contact me through the <a href="{{ site.url }}#contact" style="color: #{{ site.color.secondary }};"><b>Contact Me</b></a>-form</p>
+
+        </div>
+    </div>
+</section>
 <div class="container">
     {% for post in site.posts %}
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1 text-center">
+            <a href="{{ post.url | absolute_url }}">
             <h1>{{ post.title }}</h1>
+            </a>
             {% if post.preview %}
+            <a href="{{ post.url | absolute_url }}">
             <img src="{{ post.preview.img }}" alt="{{ post.preview.alt }}" class="img-responsive" />
+            </a>
             {% endif %}
             <p>{{ post.description }}</p>
             <br/>

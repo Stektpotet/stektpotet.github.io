@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-xl-12">
                     {% if page.header.img %}
                     <img class="img-responsive" src="img/profile.png" alt="">
                     {% endif %}
@@ -17,12 +17,15 @@
                             <span class="name" id="quote">{{ page.header.subtitle }}</span>
                             {% if page.header.subtitle contains '!RUN_QUOTE_SCRIPT!'%}
                                 <script type="text/javascript">
-                                var quote_list = ["nullptr"];
+                                var quote_list = [{text: "<span class='o'>nullptr</span>", style: "code"}];
                                 {% for quote in page.quotes %}
-                                quote_list.push("{{ quote }}");
+                                var quote = {text: "{{ quote.text }}", style: "{{ quote.style }}"}
+                                quote_list.push(quote); //
                                 {% endfor %}
                                 var random_quote = quote_list[Math.floor(Math.random() * quote_list.length)];
-                                document.getElementById("quote").innerHTML = random_quote;
+                                var tag = document.getElementById("quote");
+                                tag.setAttribute("class", random_quote.style);
+                                tag.innerHTML = random_quote.text;
                                 </script>
                             {% endif %}
                         {% endif %}

@@ -17,7 +17,7 @@ preview:
   img-background: '#181c18'
 project-date: 2016-12-02 12:00:00 +01:00
 description: 'Amazeking was a small game prototype developed by me and fellow classmates as part of the "Experience Design"-course held at NTNU (IMT1361). My role in development was lead programmer, and level creator, '
-layout: blog
+layout: blog_post
 ---
 <p class="small">{{ page.description }}</p>
 [Gameplay Video](https://www.youtube.com/watch?v=KoEsu2TFOV4)

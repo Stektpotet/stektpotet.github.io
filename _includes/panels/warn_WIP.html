@@ -1,0 +1,12 @@
+{% assign raw_header = include.panel-header | markdownify %}
+{% assign end_tag = raw_header | size | minus: 8 %}
+{% assign header = raw_header | slice: 3, end_tag %}
+
+<div class="panel panel-danger">
+<div class="panel-heading">
+<p class="text-center" style="margin: 0px;">{{ header }}</p>
+</div>
+<div class="panel-body text-justify">
+{{ include.content | markdownify }}
+</div>
+</div>

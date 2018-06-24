@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: blog_post
 title: Post Processing Adventures - Pixealation Shader
 header:
   title: Post Processing Adventures
@@ -13,58 +13,28 @@ preview:
   alt: Preview of the pixelation effect
   img-background: '#194c66'
 project-date: June 2018
-description: Use this area of the page to describe your project. The icon above is
-  part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>.
-  On their website, you can download their free set with 16 icons, or you can purchase
-  the entire set with 146 icons for only $12!
+description:
 ---
-## Post Processing
+{::options parse_block_html="true" /}
+## Pixelating your viewport through post Processing
+{: .text-center }
 
-Post processing is an incredibly powerful tool in graphics.
-As suggested by the name, post processing happens post (i.e. after) processing. In the graphics context - after rendering.
+For more information on how post processing works, check out this article: [Post Processing in OpenGL ](/articles/Post Processing/)
+{: .alert .article-note .jumbotron }
 
+{% capture warn_content %}
+This blog post is not yet finished
+{: .text-center .small style="color: #{{ site.color.WIP }};"}
+{% endcapture %}
 
-Now, what does that mean? How can we apply rendering procedures after rendering is complete?
-
----
-To explain how post processing can be implemented into a graphics project, I will explain the process in which I myself implemented it in a simple OpenGL project that had a render loop looking a little something like this:
-```c++
-void update(float dt) {/*...*/}
-
-int main(int argc, char** args) {
-
-/// Initialization of everything
-///
-///         ...
-///
-
-    float lastFrameTime = 0, time = 0, deltaTime = 0;
-    while(!glfwWindowShouldClose(window))
-    {
-        time = (float)glfwGetTime();
-        deltaTime = time - lastFrameTime;
-
-
-        Renderer::clear();
-        update(dt); //up
-        Renderer::draw(scene);
-
-
-        lastFrameTime = time;
-    }
-}
-```
-
-To enable post processing in such a render-loop, some additional technology needs to be implemented, resulting in another step in the render-loop - another draw-call even!
-
-When you render geometry directly to your viewport window, there's no 'thing' to apply post processing effects onto, as the rendering process is 'given away'. - in such a case there is no output from the context for you to do further processing on. We need such an output, so we insert one in our rendering loop. How? - by rendering to a buffer, or a texture.
-
-
-## Pixelating your viewport
+{%
+    include panels/warn_WIP.html
+    panel-header="**Work in Progress!**"
+    content=warn_content
+%}
 
 
 ### vertex shader
-
 ``` glsl
 #version 410
 layout(location = 0) in vec2 position;
@@ -76,6 +46,7 @@ void main() {
     gl_Position = vec4(position, 0.0, 1.0);
 }
 ```
+
 
 ### fragment shader
 ``` glsl
@@ -103,3 +74,37 @@ void main() {
     out_color = texture(rTex_color, pixUV);
 }
 ```
+
+{% capture note00_content %}
+In most cases when dealing with post processing effects, you can get away _without_ providing UV-coordinates (`tex_coord` in the shaders) because they are directly proportionate with the fragment coordinates (accessible through the built-in variable `gl_FragCoord` in OpenGL):
+
+$$
+c_{UV} \propto c_{frag}
+$$
+
+by normalizing the fragment coordinates to the viewport we get the UV coordinates!
+{: .text-center}
+
+$$
+c_{UV}=c_{frag}/viewport
+$$
+
+Meaning - we can use `gl_FragCoord` to do the sampling of the rendertexture:
+```glsl
+// - fragment shader
+uniform vec2 viewport; //the size of the viewport, passed in upon starting the program or/and whenever it changes...
+
+// more stuff...
+void main() {
+    vec2 uv = gl_FragCoord/viewport;
+    out_color = texture(rTex_color, uv);
+}
+```
+Having said that, it might still be worth sending the UV-coordinates in as part of the vertices, considering you will, in most cases, only pass 4 vertices (the four corners of the viewport quad) into a post processing shader program.
+{% endcapture %}
+{%
+    include panels/side_note.html
+    panel-header="Using $c_{UV} \propto c_{frag}$ to minimize our vertex size"
+    panel-id="note00"
+    content=note00_content
+%}

@@ -12,6 +12,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  articles:
+    title: articles
+    output: true
 email: stektpotet@gmail.com
 description: Portfolio - A selection of my finest creations
 keywords: Game Development, Programming, Apps, Graphics

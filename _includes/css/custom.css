@@ -76,7 +76,6 @@
 }
 
 
-
 /* The dots/bullets/indicators */
 .dot {
   cursor:pointer;
@@ -126,10 +125,47 @@ a.portfolio-link div.col-lg-12.text-center {
     text-decoration: underline;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+.article-note {
+    font-weight: 100;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+}
+.article-note>a {
+   font-weight: bold;
+   color: #{{ site.color.primary }};
+}
+
 .portfolio-link {
     background-color: #ccc;
     border: double 3px #999;
 }
+
+
+header .code {
+    font-family:monospace;
+    font-weight: 700;
+    font-size: 4.25em;
+}
+
+.monospace {
+    font-family:monospace;
+}
+
+.panel-heading a {
+    color: #FFF;
+}
+.rotate-toggle {
+    float: right;
+}
+
+.panel-heading a:hover { color: #{{ site.color.secondary }}; }
+.panel-heading a.on   { color: #{{ site.color.secondary-dark }}; }
+.panel-heading a.on:hover  { color: #FFF; }
 
 /* Fading animation */
 /*

@@ -21,7 +21,7 @@ description: 'Low Poly World: An editor extension for Unity, the 3D Game Engine,
   fast conversion from built-in, soft shaded terrain types to flat-shaded meshes,
   divided into chunks for optimization.'
 Asset Store: http://u3d.as/oir
-layout: blog
+layout: blog_post
 ---
 
 ## Low Poly Systems: Low Poly World

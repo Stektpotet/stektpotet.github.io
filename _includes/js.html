@@ -20,11 +20,28 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{ "/js/freelancer.js" }}"></script>
 
-    <!-- Personal scripts-->
-    <!-- Image slider -->
-    <script src="{{ "/js/slides.js" }}"></script>
-    <script src="{{" /js/quote_script.js "}}"></script>
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  jax: ["input/TeX", "output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$', '$'] ],
+    displayMath: [ ['$$', '$$']],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  messageStyle: "none",
+  "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+});
+</script>
+    <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
+    <!-- Personal scripts-->
+    <script src="{{ "/js/slides.js" }}"></script> <!-- Image carousel -->
+    <script src="{{" /js/quote_script.js "}}"></script> <!-- Random text injector -->
+    <script src="{{" /js/fa-rotate-toggler.js "}}"></script>
     {% if site.contact == "disqus" %}
     <!-- Disqus Stuff -->
     {% include js_disqus.html %}

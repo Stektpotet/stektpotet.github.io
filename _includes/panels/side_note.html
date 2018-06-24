@@ -1,0 +1,14 @@
+{% assign raw_header = include.panel-header | markdownify %}
+{% assign end_tag = raw_header | size | minus: 8 %}
+{% assign header = raw_header | slice: 3, end_tag %}
+<!--Header: {{ header }}, raw_header: {{ raw_header }}, end_tag: {{ end_tag }}-->
+<div class="panel panel-info">
+<div class="panel-heading">
+<p class="text-center" style="margin: 0px;">
+{{ header }}<a data-toggle="collapse" href="#{{ include.panel-id }}" aria-expanded="false" role="button" aria-controls="#{{ include.panel-id }}" data-target="#{{ include.panel-id }}"><i style="font-size: 1.7em;" class=" fa fa-toggle-right rotate-toggle"></i></a>
+</p>
+</div>
+<div id="{{ include.panel-id }}" class="panel-body text-justify collapse">
+{{ include.content | markdownify }}
+</div>
+</div>
